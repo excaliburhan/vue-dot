@@ -12,8 +12,6 @@
 <script>
 import vueDot from '@/vue-dot'
 
-console.log(vueDot)
-
 export default {
   components: { vueDot },
   data () {
