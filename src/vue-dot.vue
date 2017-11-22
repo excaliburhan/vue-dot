@@ -15,7 +15,7 @@ export default {
   computed: {
     dotText () {
       let count = this.count % 3 + 1
-      return Array(count).fill('.').join('')
+      return ('.').repeat(count)
     },
   },
 

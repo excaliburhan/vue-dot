@@ -276,7 +276,7 @@ module.exports = function normalizeComponent (
   computed: {
     dotText: function dotText() {
       var count = this.count % 3 + 1;
-      return Array(count).fill('.').join('');
+      return '.'.repeat(count);
     }
   },
 

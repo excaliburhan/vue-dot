@@ -1,6 +1,6 @@
 {
   "name": "vue-dot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个...文字循环组件",
   "license": "MIT",
   "scripts": {
