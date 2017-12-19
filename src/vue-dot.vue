@@ -5,24 +5,37 @@
 <script>
 export default {
   name: 'vue-dot',
+  props: {
+    dot: {
+      type: String,
+      default: '.',
+    },
+    count: {
+      type: Number,
+      default: 3,
+    },
+    interval: {
+      type: Number,
+      default: 1000,
+    },
+  },
   data () {
     return {
       timer: null,
-      count: 0, // 计数
-      dot: '.', // 显示的...
+      index: 0, // 计数
     }
   },
   computed: {
     dotText () {
-      let count = this.count % 3 + 1
-      return ('.').repeat(count)
+      let str = this.index % this.count + 1
+      return ('.').repeat(str)
     },
   },
 
   mounted () {
     this.timer = setInterval(() => {
-      this.count++
-    }, 1000)
+      this.index++
+    }, this.interval)
   },
   beforeDestroy () {
     clearInterval(this.timer)
