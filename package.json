@@ -1,7 +1,10 @@
 {
   "name": "vue-dot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "一个...文字循环组件",
+  "main": "dist/vue-dot.min.js",
+  "repository": "git@github.com:excaliburhan/vue-mark.git",
+  "author": "xiaoping <edwardhjp@gmail.com>",
   "license": "MIT",
   "scripts": {
     "prepare": "npm run build",
